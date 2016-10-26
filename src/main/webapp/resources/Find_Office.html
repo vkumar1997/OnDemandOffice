@@ -1,0 +1,112 @@
+<!-- Creaed By Siddharth Singh and Vikas Kumar -->
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>OnDemandOffice</title>
+		
+		<link rel="stylesheet" href="css/stylesheet.css" />
+		<link rel="stylesheet" href="css/jquery_mobile.css" />
+		<link rel="stylesheet" href="css/nativedroid.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+		 <link rel="stylesheet" href="css/nativedroid2.color.blue-grey.css" />
+		 <script type = "text/javascript" src = "js/jquery_min.js"></script>
+		 <script type="text/javascript" src="js/jquery_mobile.js" ></script>
+		 <script type="text/javascript" src="js/nativedroid2.js" ></script>
+		 
+		 <script type = "text/javascript" src = "js/cookie.js"></script>
+		 <script type="text/javascript" src="js/nav_bar.js" ></script>
+		 <script type="text/javascript" src="js/allOffices.js" ></script>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+		width=device-width, height=device-height" />
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#navbar").on("swiperight", function(event,ui){
+				$("#navbar").panel("open");
+			});
+				$("#page1").on("swipeleft", function(event,ui){
+				$("#navbar").panel("close");
+			});
+		});
+		</script>
+		 
+		 
+	</head>
+
+	<body>
+	
+	<div data-role="page" id="page1">
+		<div data-role="panel" id="navbar" data-dismissible="true"  data-display="overlay" data-position-fixed="true">
+			<div id="nav_div">
+				<img src="images/icon.PNG" id="nav_icon"></img>
+				<h5 id="nav_name">Vikas Kumar<br><br>vkumar111223@gmail.com</h5>
+			</div> 
+    		
+    		
+    		<ul data-role="listview" data-icon="false" id="list">
+				<li data-role="list-divider"></li>
+				<li>
+				<a onclick="window.location.replace('Find_Office.html'); ">
+					<img src="images/search.png" class="ui-thumbnail ui-thumbnail-circular" />
+					<h2>Find Offices</h2>
+					<p>Office space on hourly basis.</p>
+					</a>
+				</li>
+				<li>
+					<a onclick="window.location.replace('office_uploads.html'); ">
+						<img src="images/office.png" class="ui-thumbnail ui-thumbnail-circular" />
+						<h2>My Uploads</h2>
+						<p>Rent your office space</p>
+					</a>
+				</li>
+				
+				<li>
+					<a onclick="window.location.href='history.html';">
+						<img src="images/shortlist.png" class="ui-thumbnail ui-thumbnail-circular" />
+						<h2>History</h2>
+						<p>See your booking history</p>
+					</a>
+				</li>
+				
+				<li>
+					<a onclick="window.location.href='shortlist.html'; ">
+						<img src="images/ok.png" class="ui-thumbnail ui-thumbnail-circular" />
+						<h2>Shortlist</h2>
+						<p>See the offices you shortlisted</p>
+					</a>
+				</li>
+				
+				<li>
+					<a onclick="window.location.href='contact.html';">
+						<img src="images/contact.png" class="ui-thumbnail ui-thumbnail-circular" />
+						<h2>Contact Us</h2>
+						<p>Give us your feedback!</p>
+					</a>
+				</li>
+				
+				<li>
+					<a onclick="log_out()">
+						<img src="images/logout.png" class="ui-thumbnail ui-thumbnail-circular" />
+						<h2>Logout</h2>
+						<p>Sign in with different account</p>
+					</a>
+				</li>
+			</ul>
+
+  		</div>
+		<div data-role="header" data-position="fixed" id="header">
+ 			<a href="#navbar" class="ui-btn ui-btn-left">
+ 				<i class="zmdi zmdi-menu"></i></a>
+			<h2>Find Offices</h2> 
+			<input type="search" placeholder="Search by city, location, rent price, maximum people" id="search_text" onchange="textlistener()">
+			<a class="ui-btn ui-btn-right" onclick="search_bar()">
+ 				<i class="zmdi zmdi-search"></i></a>
+		</div>
+		
+		
+		
+	</div>
+</html>

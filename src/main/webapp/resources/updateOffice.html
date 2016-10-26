@@ -1,0 +1,161 @@
+<!-- Creaed By Vikas Kumar -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Office</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style2.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/slider.css"></link>
+	<script type = "text/javascript" src = "js/cookie.js"></script>
+	<script type = "text/javascript" src = "js/jquery_min.js"></script>
+	<script src="js/update_office.js" type="text/javascript"></script>
+	
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width, height=device-height"/>
+		
+
+</head>
+
+<body>
+	
+	<form id="form"  enctype="multipart/form-data">
+		<div class="container1">
+			<div class="header">
+				<p class="header_text">Contact Information</p>
+			</div>
+			<div class="form-input1">
+				<input type="text" id="name" name="name" placeholder="Full Name">
+			</div>
+			<div class="form-input1" >
+				<input type="text" id="mail" name="mail" placeholder="Mail Id" readonly>
+			</div>
+			<div class="form-input1" >
+				<input type="tel" id="p_number" name="phone" placeholder="Phone Number">
+			</div>
+			<div class="form-input1" >
+				<input type="text" id="home_address" name="home" placeholder="Home Address">
+			</div>		
+		</div>
+		
+		<div class="container1">
+			<div class="header">
+				<p class="header_text">Office Information</p>
+			</div>
+			<div class="form-input2">
+				<input type="text" id="office_address" name="office" placeholder="Office Address">
+			</div>
+			
+			<!--Code if only NCR cities required (Changes in js file too)  
+			<div class="form-input2" >
+				<input type="text" list="city_list" id="city" name="city" placeholder="City">
+				<datalist id="city_list">
+					<option value="Delhi">
+					<option value="Gurgaon">
+					<option value="Noida">
+					<option value="Fraidabad">
+					<option value="Ghaziabad">
+					<option value="Greater Noida">
+					<option value="Meerut">
+					<option value="Sonipat">
+				</datalist>
+			</div>-->
+			
+			<div class="form-input2" >
+				<input type="text" list="city_list" id="city" name="city" placeholder="City">
+			</div>
+			
+			<div class="form-input2">
+				<input type="number" min="1" id="office_price" max="99999" name="price" placeholder="Price / Hour (In Rs)">
+			</div>
+			
+			<div class="form-input2">
+				<input type="number" min="1" id="max_people" name="people" max="5000" placeholder="Max People Allowed">
+			</div>
+			
+			<p id='time'>OPENING AND CLOSING TIME</p>
+			<div class="form-input2">
+				<input type="time" id="start_time" name="start_time" value="00:00:00">
+			</div>
+			
+			<div class="form-input2">
+				<input type="time" id="end_time" name="end_time" value="00:00:00">
+			</div>
+		</div>
+		
+		<div class="container1" id="pictures">
+			<div class="header">
+				<p class="header_text">Snapshots</p>
+			</div>
+			<a href="#" onclick="add_image()"  id="add_image"/>Add images</a>
+			<p id="img_desc">Select multiple files<br>(Atleast three pictures)</p>
+			<input type="file" id="file" name="file[]" multiple style="display: none;" accept=".jpg,.jpeg,.png">
+			<div id='pic'></div>
+		</div>
+		
+		
+		<div class="container1">
+			<div class="header">
+				<p class="header_text">Facilities</p>
+			</div>
+	
+			
+			<div class="switches">
+			<label class="switch">
+				<input type="checkbox" name="water">
+				<div class="slider round"></div>
+			</label>
+			<label class="switch_label">Water Facilities</label>
+			</div>
+		
+			<div class="switches">
+			<label class="switch">
+				<input type="checkbox" name="washroom">
+				<div class="slider round"></div>
+			</label>
+			<label class="switch_label">Washroom Facilities</label>
+			</div>
+			
+			<div class="switches">
+			<label class="switch">
+				<input type="checkbox" name="ac">
+				<div class="slider round"></div>
+			</label>
+			<label class="switch_label">Air Conditioned</label>
+			</div>
+			
+			<div class="switches">
+			<label class="switch">
+				<input type="checkbox" name="computer">
+				<div class="slider round"></div>
+			</label>
+			<label class="switch_label">Computer Facilities</label>
+			</div>
+			
+			<div class="switches">
+			<label class="switch">
+				<input type="checkbox" name="maid">
+				<div class="slider round"></div>
+			</label>
+			<label class="switch_label">Office Maid</label>
+			</div>
+			
+			<br><br><br>
+			<hr width="93%">
+			<p id='description' style="color:black;">ADDITIONAL SERVICES</p>
+			
+			<div class="form-input5">
+				<textarea name="description" id="sription" placeholder="Description.. (List or Paragraph)"></textarea>
+			</div>
+			<input type="number" id="office_id" name="office_id" style="display:none">
+			
+		</div>
+		
+		<div style="text-align: center;">
+		<img id="loader" src="css/images/ajax-loader.gif"/>
+			<input type="Submit" id="update" value="Update Office"></input>
+		<div>
+	</form>
+</body>
+</html>
+		

@@ -1,0 +1,74 @@
+
+
+body{
+	height: 100%;
+	background-color:#2d2927;
+	background-repeat:no-repeat;
+	background-size: 100% 1025px;
+	position:relative;
+	background-size: cover;
+}
+
+#head
+{
+	color:#b6bab9;
+	letter-spacing:2px;
+}
+
+.container
+{
+	margin:20px;
+	padding:12px;
+	text-align:center;
+	background-color:#000;
+}
+
+.key
+{
+	color:#7a726f;
+	font-size:20px;
+	letter-spacing:1px;
+	font-weight:normal;
+}
+.entry
+{
+	padding:20px;
+}
+.value
+{
+	color:#b6bab9;
+	font-size:20px;
+	letter-spacing:1px;
+	padding-top:7px;
+	font-weight:normal;
+}
+
+#timestamp, #timestamp1
+{
+	padding:6px;
+}
+#timestamp
+{
+	margin-bottom:12px;
+}
+
+.message{
+	margin-top: 20%;
+	text-align: center;
+	color:white;
+	font-size: 35px;
+}
+
+.send
+{
+	background-color:black;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	color:white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding:8px;
+	margin-top: 20px;
+	font-family: "FontAwesome";
+}
+
+

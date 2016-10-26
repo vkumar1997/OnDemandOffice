@@ -1,0 +1,148 @@
+/*Created by Vikas Kumar and Siddharth Singh. login and register */
+
+
+body{
+	height: 100%;
+	background-IMAGE:url('../images/bg.jpg');
+	background-color:black;
+	background-repeat:no-repeat;
+	background-size: 100% 1325px;
+	position:relative;
+}
+
+.title{
+	color:#fff;
+	text-align:center;
+	padding:10px;
+	font-size:25px;
+}
+
+.container{
+	width:  90%;
+	position:relative;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(52,93,114,0.95);
+	border-radius: 4px;
+
+	margin: 0 auto;
+	margin-top:70px;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	margin-bottom:50px;
+}
+
+.container img{
+	width:120px;
+	height:120px;
+	margin-top:-60px;
+	margin-bottom:30px;
+}
+
+#new_password,#username, #password, #name, #enter_username, #enter_phone, #enter_password, #confirm_password, #otp_verify,#otp_ver{
+height:45px;
+border:none;
+width:70%;
+font-size:18px;
+margin-bottom:20px;
+background-color: #fff;
+padding-left:45px;
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+font-family: "FontAwesome";
+}
+#enter_city
+{
+	height:45px;
+border:none;
+width:70%;
+font-size:18px;
+margin-bottom:20px;
+background-color: #fff;
+padding-left:45px;
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+
+
+}
+
+#otp_verify, #otp_ver, #new_password{
+	width:30%; 
+	padding-left:12px;
+}
+
+
+.form-input1::before,.form-input2::before{
+	content: "\f01c";
+	position:absolute;
+	font-family: "FontAwesome";
+	padding-left:5px;
+	padding-top:6px;
+	color: 	#000;
+	font-size: 30px;
+}
+
+.form-input2:nth-child(1)::before{
+	content: "\f007";
+}
+.form-input2:nth-child(3)::before{
+	content: "\f095";
+}
+
+.form-input1:nth-child(2)::before
+{
+	content:"\f023";
+	padding-left:9px;
+}
+.form-input2:nth-child(4)::before
+{
+	content:"\f041";
+	padding-left:9px;
+}
+.form-input2:nth-child(5)::before,.form-input2:nth-child(6)::before
+{
+	content:"\f023";
+	padding-left:9px;
+}
+.submit
+{
+	padding: 15px 30px;
+	color:#fff;
+	border-radius:4px;
+	letter-spacing: 3px;
+	background-color:#222222;
+	border:none;
+
+	margin-top: 20px;
+	font-size: 13px;
+	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.5);
+}
+
+p{
+	color:#aaaaaa;
+	letter-spacing: 1px;
+	padding:5px;
+	font-weight:bold;
+}
+
+.container button{
+	width: 49.8%;
+	margin:20px 0px 0px 0px;
+	background-color:#222222;
+	border:none;
+	color: #fff;
+	letter-spacing: 2px;
+	outline:none;
+	font-size: 18px;
+	padding:10px;
+}
+
+#button2
+{
+	background-color: rgba(52,73,94,0.7);
+	margin-left:-4px;
+}
+
+#loader,#load
+{
+	display:none;
+	margin-top:10px;
+	margin-bottom:-10px;
+}

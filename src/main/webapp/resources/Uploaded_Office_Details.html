@@ -1,0 +1,138 @@
+<!-- Creaed By Siddharth Singh and Mayur Singh-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>Uploaded Office Details</title>
+		<link rel="stylesheet" href="css/description.css" >
+		<link rel="stylesheet" href="boot/css/bootstrap.min.css">
+		<script type = "text/javascript" src = "js/cookie.js"></script>
+		
+		<script src="boot/js/jquery.min.js"></script>
+		<script src="boot/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="boot/css/bootstrap-theme.min.css">
+		
+		<script src="js/description.js"></script>
+		<script src="js/Approve_office.js"></script>
+		<script type="text/javascript">
+			var current = 1;
+		</script>
+
+	</head>
+	
+	<body>
+		
+		<div class="index---imgouter---2yvT7" id="container" >
+			<div class="carousel slide" >
+				<ol id="indicate" style="margin-bottom:-12px;" class="carousel-indicators" >
+					<li class="active" id="indicator_1" onclick="changeto(1);"></li>
+					<span > </span>
+				</ol>
+				
+				<div class="carousel-inner" id="contain" >
+					<div class="item active left images" id="Dead_image_not_of_use_do_not_remove">
+						<div style="background-image: url('');" class="index---hotelimgwrap---13dOU" ></div>
+					</div>
+					
+					<div class="item next left images" id="pre_image_1">
+						<div style="background-image: url('');" class="index---hotelimgwrap---13dOU" ></div>
+					</div>
+
+					
+				</div>
+				
+				
+				
+				<a class="carousel-control left" role="button" onclick="change(-1);" >
+					<span class="glyphicon glyphicon-chevron-left" ></span>
+				</a>
+				
+				<a class="carousel-control right" role="button" onclick="change(1);" >
+					<span class="glyphicon glyphicon-chevron-right" ></span>
+				</a>
+			</div>
+			
+			<div class="index---bgoverlay---2Whj7" >
+				<div class="index---overlayinner---17Dqf" >
+					<div class="container" >
+						<div class="row" >
+							<div class="col-xs-12" >
+								<h1 id="head"></h1>
+
+								<br>
+								<span id="subhead" class="index---address---TeYzm" ></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="index---descriptionwrap---1m_yZ" >
+			<div class="index---descriptioninner---2E0Jn" >
+					<center>
+					<a id="link" style="font-size:40px">See on Google Maps</a>
+					<div class="table" id="table">
+						<h2  id="heading" >CONTACT</h2>
+						<table >
+							<script type="text/javascript">
+								tab("Owner Name","",true,'t1');
+								tab("E-Mail Id","",true,'t2');
+								tab("Phone Number","",true,'t3');
+								tab("Home Address","",true,'t4');
+								tab("Approval Status.............................","sidhartha",false);
+							</script>	
+						</table>
+						<h2 id="heading">Summary</h2>
+						<table >
+							<script type="text/javascript">
+								tab("Rent Price per hour","",true,'t5');
+								tab("Accomodation for","",true,'t6');
+								tab("Opening time","",true,'t7');
+								tab("Closing time","",true,'t8');
+								tab("Likes / Requests","",true,'t9');
+								tab("Approval Status.............................","",false,'t10');
+							</script>	
+						</table>
+					</div></center>
+				
+				</div>
+				
+			</div>
+		</div>
+						
+		<center>
+		<h2 id="heading">Facilities</h2>
+		<span>
+			<img class="amenities" id="water" src="images/Water.png" ></img>
+			<img class="amenities" id="washroom" src="images/washroom.png" >
+			<img class="amenities" id="ac" src="images/ac.PNG" >
+			<img class="amenities" id="computer" src="images/comp.png">
+			<img class="amenities" id="maid" src="images/maid.png">
+		</span>
+			
+			
+		<h2 id="heading_des" >Additional Services</h2>
+		
+		<div class="index---summaryinner---1ZDQX" >
+			<p id="describe">Minimum 24 hours advance notice required for add-ons.</p>
+		</div>
+		</center>
+		<center>
+			<input type="submit" value="Update Office" id="update" onclick='update()'>
+			<input type="submit" value="Office Available" id="engage">
+			<input type="submit" value="Delete Office" id="delete">
+			
+		</center>
+			
+		
+	</body>
+	
+</html>
+
+
+

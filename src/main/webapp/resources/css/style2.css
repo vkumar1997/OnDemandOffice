@@ -1,0 +1,215 @@
+/*office form, update office form and send request form. Created by Vikas Kumar and Siddharth Singh*/
+
+
+body{
+	height: 100%;
+	background-color:#0d0d0d;
+	background-repeat:no-repeat;
+	background-size: 100% 1025px;
+	position:relative;
+	background-size: cover
+}
+
+
+.container1{
+	width:  90%;
+	position:relative;
+	
+	margin: 0 auto;
+	background-color: rgba(52,73,94,0.7);
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top:30px;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	padding: 0;
+	padding-bottom:12px;
+}
+
+
+#sription, #mail, #name,#p_number, #home_address, #office_address, #city, #office_price, #max_people, #start_time, #end_time, #desks, #no_of_days,#start{
+	height:45px;
+	border:none;
+	width:80%;
+	font-size:18px;
+	color: #fff;
+	letter-spacing: 2px;
+	margin-bottom:20px;
+	margin-left:4%;
+	background-color: rgba(52,73,94,0);
+	padding-left:45px;
+	font-family: "FontAwesome";
+}
+
+#sription
+{
+	padding-left:0px;
+}
+
+#desks
+{
+	padding: 0px;
+}
+
+
+.switches
+{
+	padding-left:4%;
+	margin-top:20px;
+}
+
+.switch_label
+{
+	padding-left:4%;
+	font-size:18px;
+	color: #fff;
+	letter-spacing: 2px;
+	font-family: "FontAwesome";
+	
+	
+}
+
+input:focus{
+	outline: none;
+}
+
+.header
+{
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	margin-bottom: 20px;
+	background-color: black;
+	height: 60px;
+	
+}
+
+.header_text
+{
+	color: white;
+	margin-left: 12px;
+	margin-top: 12px;
+	line-height: 300%;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+
+.form-input1::before, .form-input2::before, .form-input3::before,.form-input4::before{
+	position:absolute;
+	font-family: "FontAwesome";
+	padding-left:5px;
+	padding-top:7px;
+	color: 	#000;
+	font-size: 30px;
+	margin-left: 4%;
+}
+.form-input1:nth-child(3)::before,.form-input3:nth-child(3)::before{
+	content: "\f01c";
+}
+.form-input1:nth-child(2)::before,.form-input3:nth-child(2)::before{
+	content: "\f007";
+}
+
+.form-input1:nth-child(4)::before,.form-input3:nth-child(4)::before{
+	content: "\f095";
+}
+.form-input1:nth-child(5)::before{
+	content: "\f015";
+}
+.form-input2:nth-child(2)::before{
+	content: "\f0b1";
+}
+.form-input2:nth-child(3)::before{
+	content: "\f041";
+}
+.form-input2:nth-child(4)::before{
+	content: "\f156";
+}
+.form-input2:nth-child(5)::before{
+	content: "\f0c0";
+}
+.form-input2:nth-child(7)::before,.form-input4:nth-child(6)::before{
+	content: "\f017";
+}
+.form-input2:nth-child(8)::before,.form-input4:nth-child(7)::before{
+	content: "\f017";
+}
+
+.form-input4:nth-child(2)::before{
+	content: "\f073";
+}
+
+.form-input4:nth-child(4)::before{
+	content:"\f073"
+}
+
+#time
+{
+	margin-left:4%;
+	padding:8px;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+#description
+{
+	margin-left:4%;
+	padding:8px;
+	font-weight:bold;
+}
+
+#start_time, #end_time
+{
+	width:70%;
+}
+
+#add_image
+{
+	background-color:black;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	color:white;
+	font-size: 20px;
+	margin-left:4%;
+	text-decoration: none;
+	letter-spacing: 2px;
+	padding:8px;
+	margin-top: 20px;
+	margin-bottom: 90px;
+}
+
+.snapshots
+{
+	width: 90%;
+	margin-top: 30px;
+	margin-left:5%;
+	margin-bottom: 12px;
+}
+
+#img_desc
+{
+	margin-left: 5%;
+	color:white;
+	letter-spacing: 1px;
+}
+
+#submit,#request,#update
+{
+	background-color:black;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	color:white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding:8px;
+	margin-top: 20px;
+	font-family: "FontAwesome";
+}
+
+#loader
+{
+	width:120px;
+	height:120px;
+	display:none;
+	margin:0 auto;
+	
+}
+
+
+
+

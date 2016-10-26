@@ -1,0 +1,61 @@
+//time count 
+body{
+	height: 100%;
+	background-color:#0d0d0d;
+	background-repeat:no-repeat;
+	background-size: 100% 1025px;
+	position:relative;
+	background-size: cover
+}
+
+#time,#total
+{
+	color:white;
+	font-size:30px;
+}
+#price,#timecount
+{
+	color:#4f6487;
+	font-size:30px;
+}
+
+#timer_cont
+{
+	text-align:center;
+	margin-top:100px;
+	display:none;
+}
+
+#stop,#verify
+{
+	background-color:black;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	color:white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding:8px;
+	width:40%;
+	margin-top: 20px;
+}
+#message
+{
+	color:white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding:8px;
+	
+}
+#ref_verify
+{
+	letter-spacing: 2px;
+	padding:10px;
+	width:40%;
+	margin-right:7px;
+	font-size: 16px;
+	margin-top: 16px;	
+}
+#form
+{
+	text-align:center;
+	margin-top:200px;
+}

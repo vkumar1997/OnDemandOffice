@@ -1,0 +1,91 @@
+/*Created by Vikas Kumar and Pavas Navaney. Approved offices, waiting offices, shortlisted offices, find offices, rejected offices, uploaded offices list*/
+.floating {
+  position: fixed;
+  border-radius: 50%;
+  width:60px;
+  height:60px;
+  background-color: #000;
+  box-shadow: 0 2px 3px #8a8a8a;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  margin: 0 20px 20px 0;
+  -webkit-transform: 300ms, opacity 0.25s linear;
+      -ms-transform: 300ms, opacity 0.25s linear;
+          transform: 300ms, opacity 0.25s linear;
+}
+#float {
+  left: 0;
+  margin: 0 0 20px 20px;
+  display:none;
+}
+
+
+#nav_div
+{
+  padding:12px;
+  background-image:url("../images/nav_back.PNG");
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+#nav_icon
+{
+	width:100px;
+	height:100px;
+}
+
+
+.office_cards
+{
+	margin:4 auto;
+}
+
+#nav_name
+{
+	color: white;
+	letter-spacing: 2px;
+}
+
+
+a {text-decoration: none;
+}
+
+
+ul
+{
+	margin-top: 40px;
+    list-style-type: none;
+    
+}
+ul li
+{
+	padding-top:18px;
+    color: black;
+}
+
+.message{
+	margin-top: 20%;
+	text-align: center;
+	font-size: 35px;
+}
+
+#search_text
+{
+	padding:12px;
+	display:none;
+	
+}
+
+#header{
+	height:60px;
+}
+
+
+
+
+
+
+
+
